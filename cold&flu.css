@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Inter&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Courgette', cursive;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background{
+    width: 100%;
+    background: linear-gradient(#c3eaf8,#2e6476d6);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar img{
+    width: 80px;
+}
+
+.navbar-items{
+    flex: 1;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background: #c3eaf8; */
+}
+
+.navbar h3{
+  color: #06465c;
+  font-weight: 50px;
+  /* font-size: 18px; */
+  padding: 20px;
+  font: 1.5rem sans-serif;
+  letter-spacing: 3px;
+}
+
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 18px;
+    font: 1rem sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #06465c;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #3e7c92;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.burger{
+    display: none;
+}
+
+
+/*----------- navbar responsive------------- */
+
+@media only screen and (max-width:995px){
+    .box{
+        width: 40%;
+        height: 69%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:828px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .footer-sec {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .navbar ul li{
+        display: block;
+        padding: 2px 0 34px;
+    }
+    .navbar-items{
+        position: absolute;
+        background-color: #6ab1c9;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 1s ease-out;
+    }
+    .navbar-items ul{
+        padding: 98px 51px 8px 49px;
+    }
+    .burger{
+        display: block;
+        z-index: 3;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        cursor: pointer;
+        font-size: 33px;
+        color: #fff;
+    }
+    .h-class{
+        height: 100vh;
+        opacity: 0;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .box input{
+        width: 85%;
+    }
+    .row,.sec{
+        flex-direction: column;
+    }
+    .box3{
+        width: 90%;
+    }
+    .row,.box1{
+        margin-bottom: 7%;
+    }
+    .box1{
+        padding: 4%;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .box{
+        width: 68%;
+    }
+    .text-box,.right,.left{
+        width: 95%;
+    }
+    .box h1{
+        padding: 0;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .right p{
+        font-size: 14px;
+    }
+}
+
+
+/* _______________footer_______________*/
+
+ footer{
+    background-color: #2e6476d6;
+    color: #fff;
+}
+.footer-sec{
+    padding: 3% 0;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.sec{
+    display: flex;
+    flex-basis: 40%;
+}
+.f_box{
+    flex-basis: 50%;
+}
+.f_box h2{
+    font-size: 20px;
+    padding-bottom: 2%;
+    color: #0a353c;
+    font-weight: 7px;
+}
+
+.f_box p{
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.f_box p:hover{
+  color: #015b65;
+  cursor: pointer;
+}
+
+.f_box p i{
+    font-size: 23px;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+
+.f_box p i:hover{
+  color: #001c24;
+}
+
+.para{
+    text-align: center;
+    padding: 12px 0;
+    background-color: #052b3197;
+} 
+
+footer .copyright p {
+    text-align: center;
+    color: white;
+    background: #0a353c91;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+/* Cold & Flu Section */
+
+.flu-section {
+    padding: 40px;
+    background: #f5faff;
+}
+
+.flu-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flu-header h2 {
+    font-size: 32px;
+    color: #004d80;
+}
+
+.sub-text {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Map + Overall Risk */
+.flu-map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.risk-level-box {
+    width: 30%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.risk-level-box h3 {
+    margin-bottom: 10px;
+}
+
+.risk-indicator {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.risk-note {
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+}
+
+.bangladesh-map {
+    width: 60%;
+}
+
+.bangladesh-map img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Symptom + Area Cards */
+.symptom-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.symptom-card,
+.area-card,
+.tips-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.symptom-card ul,
+.area-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.symptom-card ul li,
+.area-card ul li {
+    padding: 5px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* Risk Colors */
+.high-risk {
+    background: #b30000;
+    color: white;
+}
+
+.moderate-risk {
+    background: #ff9900;
+    color: white;
+}
+
+.low-risk {
+    background: #2a8f2a;
+    color: white;
+}
+
+.map-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.map-wrapper img {
+    width: 380px;
+    border-radius: 12px;
+}
+
+/* Hotspot style */
+.hotspot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(255,0,0,0.6);
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+}

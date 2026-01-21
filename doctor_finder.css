@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Inter&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Courgette', cursive;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background{
+    width: 100%;
+    background: linear-gradient(#c3eaf8,#2e6476d6);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar img{
+    width: 80px;
+}
+
+.navbar-items{
+    flex: 1;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background: #c3eaf8; */
+}
+
+.navbar h3{
+  color: #06465c;
+  font-weight: 50px;
+  /* font-size: 18px; */
+  padding: 20px;
+  font: 1.5rem sans-serif;
+  letter-spacing: 3px;
+}
+
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 18px;
+    font: 1rem sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #06465c;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #3e7c92;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.burger{
+    display: none;
+}
+
+
+/*----------- navbar responsive------------- */
+
+@media only screen and (max-width:995px){
+    .box{
+        width: 40%;
+        height: 69%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:828px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .footer-sec {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .navbar ul li{
+        display: block;
+        padding: 2px 0 34px;
+    }
+    .navbar-items{
+        position: absolute;
+        background-color: #6ab1c9;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 1s ease-out;
+    }
+    .navbar-items ul{
+        padding: 98px 51px 8px 49px;
+    }
+    .burger{
+        display: block;
+        z-index: 3;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        cursor: pointer;
+        font-size: 33px;
+        color: #fff;
+    }
+    .h-class{
+        height: 100vh;
+        opacity: 0;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .box input{
+        width: 85%;
+    }
+    .row,.sec{
+        flex-direction: column;
+    }
+    .box3{
+        width: 90%;
+    }
+    .row,.box1{
+        margin-bottom: 7%;
+    }
+    .box1{
+        padding: 4%;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .box{
+        width: 68%;
+    }
+    .text-box,.right,.left{
+        width: 95%;
+    }
+    .box h1{
+        padding: 0;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .right p{
+        font-size: 14px;
+    }
+}
+
+
+/* _______________footer_______________*/
+
+ footer{
+    background-color: #2e6476d6;
+    color: #fff;
+}
+.footer-sec{
+    padding: 3% 0;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.sec{
+    display: flex;
+    flex-basis: 40%;
+}
+.f_box{
+    flex-basis: 50%;
+}
+.f_box h2{
+    font-size: 20px;
+    padding-bottom: 2%;
+    color: #0a353c;
+    font-weight: 7px;
+}
+
+.f_box p{
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.f_box p:hover{
+  color: #015b65;
+  cursor: pointer;
+}
+
+.f_box p i{
+    font-size: 23px;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+
+.f_box p i:hover{
+  color: #001c24;
+}
+
+.para{
+    text-align: center;
+    padding: 12px 0;
+    background-color: #052b3197;
+} 
+
+footer .copyright p {
+    text-align: center;
+    color: white;
+    background: #0a353c91;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+/* doctor finder */
+
+.center-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.finder-card {
+  width: 860px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 8px 30px rgba(11, 33, 60, 0.352);
+  border: 1px solid rgba(7,59,107,0.06);
+}
+
+.finder-card h2 {
+  color: #073b6b;
+  margin-bottom: 6px;
+}
+
+.muted {
+  color: #456;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+/* ================================
+   TRACK SYMPTOMS SECTION STYLING
+=================================== */
+
+/* Section container */
+.symptom-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header gradient */
+.symptom-header {
+    background: linear-gradient(to right, #042445, #518cca);
+    padding: 25px;
+    border-radius: 12px 12px 0 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+}
+
+.symptom-header i {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 18px;
+}
+
+/* Card Grid */
+.symptom-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    height: 500px;
+    gap: 14px;
+    padding: 18px;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.421);
+}
+
+/* Individual card */
+.symptom-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px;
+    height: 125px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(25, 59, 90, 0.242);
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.symptom-card:hover {
+    transform: translateY(-4px);
+    border-color:  #007bff;
+}
+
+/* Card icon */
+.symptom-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+/* Card label */
+.symptom-card p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Special Add/Edit Button */
+.symptom-card.add-edit {
+    border: 2px dashed #777;
+    background: #fff4ff;
+}
+
+.symptom-card.add-edit p {
+    color: #555;
+}
+
+/* Next arrow button */
+.next-btn {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto 0 auto;
+    background: #1f4369;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.next-btn i {
+    color: white;
+    font-size: 22px;
+}
+
+
+.extra textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d6e2ef;
+  min-height: 60px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.primary {
+  background: #1f4369;
+  color: #fff;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #cfdff0;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f0f7fb;
+  border: 1px solid rgba(7,59,107,0.03);
+}
+
+.hidden { display: none; }
+
+.doctor-card {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e6f0f9;
+}
+
+.badge {
+  background: #0b6bb1;
+  padding: 6px 8px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 12px;
+}

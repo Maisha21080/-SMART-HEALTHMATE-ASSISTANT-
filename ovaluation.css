@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Inter&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Courgette', cursive;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background{
+    width: 100%;
+    background: linear-gradient(#c3eaf8,#2e6476d6);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar img{
+    width: 80px;
+}
+
+.navbar-items{
+    flex: 1;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background: #c3eaf8; */
+}
+
+.navbar h3{
+  color: #06465c;
+  font-weight: 30px;
+  font-size: 18px;
+  padding: 20px;
+  font: 1.5rem sans-serif;
+  letter-spacing: 3px;
+}
+
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 17px;
+    font: 1rem sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #06465c;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #06465c;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.burger{
+    display: none;
+    color: #06465c;
+}
+
+/*----------- navbar responsive------------- */
+
+@media only screen and (max-width:995px){
+    .box{
+        width: 40%;
+        height: 69%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:828px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .footer-sec {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .navbar ul li{
+        display: block;
+        padding: 2px 0 34px;
+    }
+    .navbar ul li a{
+        color: white;
+    }
+    .navbar-items{
+        position: absolute;
+        background-color: #6ab1c9;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 1s ease-out;
+    }
+    .navbar-items ul{
+        padding: 98px 51px 8px 49px;
+    }
+    .burger{
+        display: block;
+        z-index: 3;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        cursor: pointer;
+        font-size: 33px;
+        /* color: #fff; */
+    }
+    .h-class{
+        height: 100vh;
+        opacity: 0;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .box input{
+        width: 85%;
+    }
+    .row,.sec{
+        flex-direction: column;
+    }
+    .box3{
+        width: 90%;
+    }
+    .row,.box1{
+        margin-bottom: 7%;
+    }
+    .box1{
+        padding: 4%;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .box{
+        width: 68%;
+    }
+    .text-box,.right,.left{
+        width: 95%;
+    }
+    .box h1{
+        padding: 0;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .right p{
+        font-size: 14px;
+    }
+}
+
+
+/* _______________footer_______________*/
+
+ footer{
+    background-color: #2e6476d6;
+    color: #fff;
+}
+.footer-sec{
+    padding: 3% 0;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.sec{
+    display: flex;
+    flex-basis: 40%;
+}
+.f_box{
+    flex-basis: 50%;
+}
+.f_box h2{
+    font-size: 20px;
+    padding-bottom: 2%;
+    color: #0a353c;
+;
+    font-weight: 7px;
+}
+
+.f_box p{
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.f_box p:hover{
+  color: #015b65;
+  cursor: pointer;
+}
+
+.f_box p i{
+    font-size: 23px;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+
+.f_box p i:hover{
+  color: #001c24;
+}
+
+.para{
+    text-align: center;
+    padding: 12px 0;
+    background-color: #052b3197;
+} 
+
+footer .copyright p {
+    text-align: center;
+    color: white;
+    background: #0a353c91;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+/* =================== Ovulation Calculator Styling =================== */
+
+.ovulation-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background:  #ffffff;
+;
+}
+
+.oval-card {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 30px 25px;
+    box-shadow:0 8px 25px rgba(4, 60, 69, 0.667);
+    border: 2px solid #d6f2ff;
+}
+
+.oval-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    color: #2e6476d6;
+}
+
+.oval-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.oval-form label {
+    font-weight: bold;
+    color: #444;
+}
+
+.oval-form input {
+    padding: 12px;
+    border: 1.5px solid #d6f2ff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.oval-form input:focus {
+    border-color: #2e6476d6;
+    box-shadow: 0 0 6px rgba(4, 60, 69, 0.667);
+}
+
+.oval-form button {
+    margin-top: 10px;
+    padding: 14px;
+    background: #2e6476d6;
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.oval-form button:hover {
+    background: #2e6476d6;
+}
+
+.oval-result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 14px;
+    border-left: 6px solid #2e6476d6;
+    display: none;
+}
+
+.oval-result p {
+    margin: 6px 0;
+    font-size: 1.05em;
+}
+
+.success {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}

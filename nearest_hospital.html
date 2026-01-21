@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health care</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" href="nearest_hospital.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <section class="background">
+        <nav class="navbar">
+            <!-- <a href="#" class="logo"><img src="img/logo.png" alt=""></a>--><h3>HEALTHMATE</h3> 
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">FACILITY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                     <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <div class="burger">&#9776</div>
+        </nav>
+
+
+<!--  Medical Finder -->
+<section class="medical-ui-light">
+
+    <!-- Header -->
+    <div class="med-hero-light">
+        <div class="hero-icon-light">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h1>Find Nearby Medical Facilities</h1>
+        <p>Locate hospitals, pharmacies & clinics around you</p>
+    </div>
+
+    <!-- Search Panel -->
+    <div class="search-panel-light">
+        <!-- <input type="text" id="userLocation" placeholder="Search your location..."> -->
+        <input list="locations" id="userLocation" placeholder="Search your location...">
+
+<datalist id="locations">
+    <option value="GEC Circle">
+    <option value="2 No Gate">
+    <option value="Agrabad">
+    <option value="Chawkbazar">
+    <option value="New Market">
+    <!-- <option value="Dampara"> -->
+    <option value="Wasa">
+    <option value="Muradpur">
+    <option value="Bahaddarhat">
+    <option value="Khulshi">
+    <option value="Nasirabad">
+    <option value="Halishahar">
+    <option value="Pahartali">
+    <option value="Chittagong Port">
+    <option value="Customs Area">
+    <option value="Kotwali">
+    <option value="Sholoshahar">
+    <option value="Oxygen">
+    <option value="Baizid">
+</datalist>
+
+        <select id="facilityType">
+            <option value="hospital">Hospital</option>
+           
+        </select>
+
+        <button onclick="findNearestMedical()" class="search-btn-light">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <!-- Main Body -->
+    <div class="medical-body-light">
+
+        <!-- Results List -->
+        <div class="medical-results-light" id="medicalResult">
+            <!-- JS inserts cards -->
+        </div>
+
+        <!-- Map Display -->
+        <div class="medical-map-light">
+            <img src="images/map.jpeg" alt="map">
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- _______________footer -->
+
+    <footer>
+        <div class="footer-sec">
+            <div class="sec">
+                <div class="f_box">
+                    <h2>contact</h2>
+                    <p>email</p>
+                    <p>youtube</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                </div>
+                <div class="f_box">
+                    <h2>departments</h2>
+                    <p>radiology</p>
+                    <p>pharmocology</p>
+                    <p>pathology</p>
+                    <p>anatomy</p>
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="f_box">
+                    <h2>address</h2>
+                    <p>GEC Circle, Chattogram,<br> Block B</p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+                <div class="f_box">
+                    <h2>other facilities</h2>
+                    <p>24/7 services</p>
+                    <p>quality control</p>
+                    <p>full cycle medical care</p>
+                </div>
+            </div>
+        </div>
+         <div class="copyright">
+        <p>Copyright &copy; 2025 Smart HealthMate Assistant | Developed by Anika Ahmed & Maisha Rahman. All rights reserved.</p>
+            <p>IIUC - Department of Computer Science and Engineering</p>
+        </div>
+        </footer>
+
+    
+
+    <script src="nearest_hospital.js"></script>
+</body>
+</html>

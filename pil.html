@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" href="pill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+          integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+
+    <section class="background">
+        <nav class="navbar">
+            <h3>HEALTHMATE</h3>
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">PILL IDENTIFY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <div class="burger">&#9776</div>
+        </nav>
+
+
+       <!-- ---------------- Modern Pill Identifier Section ---------------- -->
+<section class="pill-ui">
+
+    <div class="pill-header">
+        <h2>Pill Identifier</h2>
+        <p>Identify pills by color, shape & imprint.</p>
+    </div>
+
+    <div class="pill-grid">
+
+        <!-- ------------ Search Box ------------ -->
+        <div class="pill-card search-card">
+            <h3>Find Pills</h3>
+
+            <label>Imprint / Pill Name</label>
+            <input type="text" id="pillImprint" placeholder="E.g., TYLENOL, ASP, 250">
+
+            <label>Pill Color</label>
+            <select id="pillColor">
+                <option value="">Select Color</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+            </select>
+
+            <label>Pill Shape</label>
+            <select id="pillShape">
+                <option value="">Select Shape</option>
+                <option value="round">Round</option>
+                <option value="oval">Oval</option>
+                <option value="capsule">Capsule</option>
+            </select>
+
+            <button class="pill-btn" onclick="identifyPill()">Search</button>
+        </div>
+
+        <!-- ------------ Results Box ------------ -->
+        <div class="pill-card results-card">
+            <h3>Results</h3>
+            <div id="pillResult" class="result-list">
+                <p class="placeholder">Search to see identified pills...</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!--================= FOOTER =================-->
+    <footer>
+        <div class="footer-sec">
+            <div class="sec">
+                <div class="f_box">
+                    <h2>contact</h2>
+                    <p>email</p>
+                    <p>youtube</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                </div>
+                <div class="f_box">
+                    <h2>departments</h2>
+                    <p>radiology</p>
+                    <p>pharmocology</p>
+                    <p>pathology</p>
+                    <p>anatomy</p>
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="f_box">
+                    <h2>address</h2>
+                    <p>GEC Circle, Chattogram,<br> Block B</p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+                <div class="f_box">
+                    <h2>other facilities</h2>
+                    <p>24/7 services</p>
+                    <p>quality control</p>
+                    <p>full cycle medical care</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2025 Smart HealthMate Assistant | Developed by Anika Ahmed & Maisha Rahman. All rights reserved.</p>
+            <p>IIUC - Department of Computer Science and Engineering</p>
+        </div>
+    </footer>
+
+    <!-- Load NEW JS FILE -->
+    <script src="pill.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+          integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+
+    <section class="background">
+        <nav class="navbar">
+            <h3>HEALTHMATE</h3>
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">BMI</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <div class="burger">&#9776</div>
+        </nav>
+
+        <!-- ================= BMI FORM ================= -->
+        <section class="bmi-section">
+    <div class="bmi-container">
+
+      <h2 class="section-title">BMI Calculator</h2>
+      <p class="section-subtext">
+        Easily calculate your Body Mass Index and track your fitness level.
+      </p>
+
+      <div class="bmi-row">
+
+        <!-- LEFT SIDE IMAGE -->
+        <div class="bmi-image">
+          <img src="images/work-out-BMI.jpg" alt="BMI chart">
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="bmi-form">
+          <h3>Enter Your Details</h3>
+
+          <div class="input-group">
+            <label>Height (cm)</label>
+            <input type="number" id="height" placeholder="Enter height" />
+          </div>
+
+          <div class="input-group">
+            <label>Weight (kg)</label>
+            <input type="number" id="weight" placeholder="Enter weight" />
+          </div>
+
+          <button onclick="calculateBMI()" class="btn">Calculate</button>
+
+          <div id="result" class="result-box">Your BMI will appear here</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+    <!--================= FOOTER =================-->
+    <footer>
+        <div class="footer-sec">
+            <div class="sec">
+                <div class="f_box">
+                    <h2>contact</h2>
+                    <p>email</p>
+                    <p>youtube</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                </div>
+                <div class="f_box">
+                    <h2>departments</h2>
+                    <p>radiology</p>
+                    <p>pharmocology</p>
+                    <p>pathology</p>
+                    <p>anatomy</p>
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="f_box">
+                    <h2>address</h2>
+                    <p>GEC Circle, Chattogram,<br> Block B</p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+                <div class="f_box">
+                    <h2>other facilities</h2>
+                    <p>24/7 services</p>
+                    <p>quality control</p>
+                    <p>full cycle medical care</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2025 Smart HealthMate Assistant | Developed by Anika Ahmed & Maisha Rahman. All rights reserved.</p>
+            <p>IIUC - Department of Computer Science and Engineering</p>
+        </div>
+    </footer>
+
+    <!-- Load NEW JS FILE -->
+    <script src="bmi.js"></script>
+
+</body>
+</html>

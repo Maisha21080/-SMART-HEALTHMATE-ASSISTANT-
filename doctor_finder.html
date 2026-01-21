@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health care</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" href="doctor_finder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <section class="background">
+        <nav class="navbar">
+            <!-- <a href="#" class="logo"><img src="img/logo.png" alt=""></a>--><h3>HEALTHMATE</h3> 
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">FACILITY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                     <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+            <div class="burger">&#9776</div>
+        </nav>
+
+<!-- ===== Doctor Finder Section ===== -->
+
+<main class="center-wrap">
+  <div class="finder-card">
+    <h2>Track symptoms & find the right doctor</h2>
+    <p class="muted">Select your symptoms. The system will match them to the best disease profile and suggest a doctor.</p>
+
+
+    <section class="symptom-section">
+
+    <div class="symptom-header">
+        TRACK MY SYMPTOMS
+        <i class="fas fa-info-circle"></i>
+    </div>
+
+    <div class="symptom-grid">
+       
+        <div class="symptom-card">
+            <img src="img/cold.jpg">
+            <p>Cold</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/fever.jpg">
+            <p>Fever</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/Allergy-symptoms.jpg">
+            <p>Skin rash</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/lower limbs.jpg">
+            <p>Lower limbs</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/upper limbs.jpg">
+            <p>Upper limbs</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/gastro.png">
+            <p>Gastrointestinal</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/std.jpg">
+            <p>Sexual</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/Cardiac.jpg">
+            <p>Cardiac</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/eye sore.jpg">
+            <p>Eye redness</p>
+        </div>
+
+         <div class="symptom-card">
+            <img src="img/body pain.webp">
+            <p>Body pain</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/nausea-vomiting.jpg">
+            <p>Vomiting</p>
+        </div>
+
+        <div class="symptom-card">
+            <img src="img/weakness.jpg">
+            <p>Fatique and Weakness</p>
+        </div>
+   
+        <!-- <div class="symptom-card add-edit">
+            <img src="img/add.png">
+            <p>Add / Edit</p>
+        </div> -->
+
+    </div>
+
+    <div class="next-btn">
+        <i class="fas fa-arrow-right"></i>
+    </div>
+
+</section>
+
+
+    <div class="extra">
+      <label for="extraNotes">More details (optional)</label>
+      <textarea id="extraNotes" rows="3" placeholder="Describe anything extra..."></textarea>
+    </div>
+
+    <div class="controls">
+      <button id="findBtn" class="btn primary">Find doctor</button>
+      <button id="clearBtn" class="btn ghost">Clear</button>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+</main>
+
+
+    <!-- _______________footer -->
+
+    <footer>
+        <div class="footer-sec">
+            <div class="sec">
+                <div class="f_box">
+                    <h2>contact</h2>
+                    <p>email</p>
+                    <p>youtube</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                </div>
+                <div class="f_box">
+                    <h2>departments</h2>
+                    <p>radiology</p>
+                    <p>pharmocology</p>
+                    <p>pathology</p>
+                    <p>anatomy</p>
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="f_box">
+                    <h2>address</h2>
+                    <p>GEC Circle, Chattogram,<br> Block B</p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+                <div class="f_box">
+                    <h2>other facilities</h2>
+                    <p>24/7 services</p>
+                    <p>quality control</p>
+                    <p>full cycle medical care</p>
+                </div>
+            </div>
+        </div>
+         <div class="copyright">
+        <p>Copyright &copy; 2025 Smart HealthMate Assistant | Developed by Anika Ahmed & Maisha Rahman. All rights reserved.</p>
+            <p>IIUC - Department of Computer Science and Engineering</p>
+        </div>
+        </footer>
+
+    
+
+    <script src="doctor_finder.js"></script>
+</body>
+</html>

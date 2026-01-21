@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Inter&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Courgette', cursive;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background{
+    width: 100%;
+    background: linear-gradient(#c3eaf8,#2e6476d6);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar img{
+    width: 80px;
+}
+
+.navbar-items{
+    flex: 1;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background: #c3eaf8; */
+}
+
+.navbar h3{
+  color: #06465c;
+  font-weight: 50px;
+  /* font-size: 18px; */
+  padding: 20px;
+  font: 1.5rem sans-serif;
+  letter-spacing: 3px;
+}
+
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 18px;
+    font: 1rem sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #06465c;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #3e7c92;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.burger{
+    display: none;
+}
+
+/* ===================== BMI SECTION STYLING ===================== */
+
+
+.bmi-section {
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.bmi-container {
+  max-width: 1100px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(4, 60, 69, 0.667);
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-subtext {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* -----------------------------
+   Flex Row
+------------------------------ */
+.bmi-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* -----------------------------
+   Left Image
+------------------------------ */
+.bmi-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+}
+
+/* -----------------------------BMI Form Box------------------------------ */
+
+.bmi-form {
+  flex: 1;
+  background: #f4f6ff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: inset 0px 0px 10px rgba(0, 76, 255, 0.15);
+}
+
+.bmi-form h3 {
+  margin-bottom: 20px;
+  color: #0c4280;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 2px solid #d7dcff;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4a64ff;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px 0;
+  background: #4a64ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #334cff;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  font-size: 17px;
+  background: white;
+  border-radius: 10px;
+  border: 1.5px solid #ccd1ff;
+}
+
+
+/* ----------------------------- Responsive Design------------------------------ */
+
+@media (max-width: 900px) {
+  .bmi-row {
+    flex-direction: column;
+  }
+
+  .bmi-image img {
+    max-width: 100%;
+  }
+}
+
+/*----------- navbar responsive------------- */
+
+@media only screen and (max-width:995px){
+    .box{
+        width: 40%;
+        height: 69%;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:828px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .footer-sec {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:766px){
+    .navbar ul li{
+        display: block;
+        padding: 2px 0 34px;
+    }
+    .navbar-items{
+        position: absolute;
+        background-color: #6ab1c9;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 1s ease-out;
+    }
+    .navbar-items ul{
+        padding: 98px 51px 8px 49px;
+    }
+    .burger{
+        display: block;
+        z-index: 3;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        cursor: pointer;
+        font-size: 33px;
+        color: #fff;
+    }
+    .h-class{
+        height: 100vh;
+        opacity: 0;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .box input{
+        width: 85%;
+    }
+    .row,.sec{
+        flex-direction: column;
+    }
+    .box3{
+        width: 90%;
+    }
+    .row,.box1{
+        margin-bottom: 7%;
+    }
+    .box1{
+        padding: 4%;
+    }
+}
+
+@media only screen and (max-width:570px){
+    .box{
+        width: 68%;
+    }
+    .text-box,.right,.left{
+        width: 95%;
+    }
+    .box h1{
+        padding: 0;
+    }
+    .text-box p{
+        font-size: 12px;
+    }
+    .right p{
+        font-size: 14px;
+    }
+}
+
+
+/* _______________footer_______________*/
+
+ footer{
+    background-color: #2e6476d6;
+    color: #fff;
+}
+.footer-sec{
+    padding: 3% 0;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.sec{
+    display: flex;
+    flex-basis: 40%;
+}
+.f_box{
+    flex-basis: 50%;
+}
+.f_box h2{
+    font-size: 20px;
+    padding-bottom: 2%;
+    color: #0a353c;
+    font-weight: 7px;
+}
+
+.f_box p{
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.f_box p:hover{
+  color: #015b65;
+  cursor: pointer;
+}
+
+.f_box p i{
+    font-size: 23px;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+
+.f_box p i:hover{
+  color: #001c24;
+}
+
+.para{
+    text-align: center;
+    padding: 12px 0;
+    background-color: #052b3197;
+} 
+
+footer .copyright p {
+    text-align: center;
+    color: white;
+    background: #0a353c91;
+    padding: 10px;
+    font-size: 15px;
+    
+}

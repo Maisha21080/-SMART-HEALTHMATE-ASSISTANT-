@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health care</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <section class="background">
+        <nav class="navbar">
+            <!-- <a href="#" class="logo"><img src="img/logo.png" alt=""></a>--><h3>HEALTHMATE</h3> 
+            <div class="navbar-items h-class">
+                <ul class="nav v-class">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#abouts">FACILITY</a></li>
+                    <li><a href="#contacts">CONTACT</a></li>
+                    <li><a href="#blogs">BLOG</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#aabout">ABOUT</a></li>
+                    <li><a href="#" id="openAppointment">APPOINTMENT</a></li>
+                    <!-- <li><a href="login.html">ACCOUNT</a></li> -->
+                    
+                   <li class="account-menu">
+                   <a href="#" id="accountName">ACCOUNT</a>
+                   <ul class="dropdown" id="logoutMenu">
+                   <li><a href="#" onclick="logout()">Logout</a></li>
+                   </ul>
+                   </li>
+
+
+                </ul>
+            </div>
+            <div class="burger">&#9776</div>
+        </nav>
+
+
+        <!-- _________main-sec -->
+
+        <div class="main">
+            <div class="text-box">
+                 <h1>your health is our first priority</h1>
+                 <p>Your health matters to us. We are committed to providing reliable medical guidance, 
+                    quality care, and easy access to the services you need. Our goal is to support you in 
+                    every step of your wellness journey with trust and compassion.</p>
+                <a href="#abouts" class="btn btn1">visit to know more</a>
+            </div>
+           
+
+           <div class="box hidden" id="appointmentForm">
+            <h1>appointment</h1>
+
+          <input type="text" id="app-name" placeholder="name">
+         <input type="text" id="app-doctor" placeholder="doctor name" list="doctors">
+
+     <datalist id="doctors">
+        <option value="Dr. Ahmed Rahman – Cardiologist">
+        <option value="Dr. Nusrat Jahan – General Physician">
+        <option value="Dr. Kamal Hasan – Orthopedic Specialist">
+        <option value="Dr. Samira Khan – Gynecologist">
+    </datalist>
+
+    <input type="email" id="app-email" placeholder="email">
+    <input type="number" id="app-number" placeholder="number">
+
+    <button class="btn btn2" onclick="bookAppointment()">Book Appointment</button>
+   </div>
+
+
+        </div>
+    </section>
+
+    <!-- about section start  -->
+
+    <section id="abouts" class="abouts" >
+
+        <h1 class="heading">about our facility</h1>
+        <h3 class="title">learn and explore our facility</h3>
+
+        <div class="box-containers">
+
+            <!-- start here  -->
+            <div class="boxs">
+                <!-- about images  -->
+                <div class="images">
+                    <img src="./images/739.jpg" alt="">
+                </div>
+                
+                <!-- about heading & text  -->
+                <div class="content">
+                    <h3>BMI CALCULATOR</h3>
+                    <p>Check your Body Mass Index (BMI) to understand your weight category and maintain a healthier lifestyle. Our calculator helps you track your fitness and stay informed about your wellbeing.</p>
+                 <a href="bmi.html"><button class="button">explore</button></a>   
+                </div>
+            </div>
+            <!-- end here  -->
+
+            
+            <!-- start here  -->
+            <div class="boxs">
+                <!-- about images  -->
+                <div class="images">
+                    <img src="./images/menstrual-cycle-diagram.jpg" alt="">
+                </div>
+                
+                <!-- about heading & text  -->
+                <div class="content">
+                    <h3>OVALUATION TRACKER</h3>
+                    <p>Track your ovulation cycle easily and understand your most fertile days. Our tool helps you plan better, monitor your reproductive health, and stay informed throughout your cycle.</p>
+                 <a href="ovaluation.html"><button class="button">explore</button></a>   
+                </div>
+            </div>
+            <!-- end here  -->
+
+            
+            <!-- start here  -->
+            <div class="boxs">
+                <!-- about images  -->
+                <div class="images">
+                    <img src="./images/medicine-composition-.avif" alt="">
+                </div>
+                
+                <!-- about heading & text  -->
+                <div class="content">
+                    <h3>PILL IDENTIFIER</h3>
+                   <p>Easily identify pills by their color, shape, or imprint. Our tool helps you verify medications, avoid mistakes, and ensure safe and accurate usage.</p>
+                 <a href="pil.html"><button class="button">explore</button></a>   
+                </div>
+            </div>
+            <!-- end here  -->
+           </div>
+    </section>
+
+    <!-- about section end  -->
+    
+    <!-- card section start  -->
+
+    <section id="doctors" class="cards">
+
+        <div class="container">
+
+            <h1 class="heading">doctors</h1>
+            <h3 class="title">our professional doctors</h3>
+
+            <div class="bbox-container">
+
+                <!-- start here  -->
+                <div class="bbox">
+                    <img src="./images/doctor-1.jpg" alt="">                
+                    
+                    <div class="content">
+            
+                            <h2>Dr. Ahmed Rahman</h2>
+                      
+                        <p>Cardiologis</p>
+
+                        <!-- card icons  -->
+                        <div class="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end here  -->
+
+                 <!-- start here  -->
+                 <div class="bbox">
+                    <img src="./images/doctor-2.jpg" alt="">                
+                    
+                    <div class="content">
+                        
+                            <h2>Dr. Nusrat Jahan</h2>
+                      
+                        <p>General Physician</p>
+
+                        <!-- card icons  -->
+                        <div class="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end here  -->
+
+                 <!-- start here  -->
+                 <div class="bbox">
+                    <img src="./images/doctor-3.jpg" alt="">                
+                    
+                    <div class="content">
+                        
+                            <h2>Dr. Kamal Hasan</h2>
+                       
+                        <p>Orthopedic Specialist</p>
+
+                        <!-- card icons  -->
+                        <div class="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end here  -->
+
+            </div>
+        </div>
+    </section>
+    <!-- card section end  -->
+
+    <!-- review section start  -->
+
+     <section id="review" class="review">
+
+        <h1 class="heading">our patient review</h1>
+        <h3 class="title">what patient says about us</h3>
+
+        <div class="box-containere">
+
+            <!-- start here  -->
+            <div class="boxs">
+                <i class="fas fa-quote-left"></i>
+               <p>The doctors and staff were incredibly supportive. I received proper guidance and quick service. Truly appreciate the care and professionalism they provide.</p>
+
+                <div class="images">
+                    <img src="./images/img-1.jpg" alt="">
+
+                    <div class="info">
+                        <h3>Sarah Ahmed</h3>
+                        <span>date : 30 2025</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end here  -->
+
+            
+            <!-- start here  -->
+            <div class="boxs">
+                <i class="fas fa-quote-left"></i>
+               <p>I had a great experience here. The appointment process was simple, and the doctor explained everything clearly. I felt comfortable and well-attended.</p>
+
+                <div class="images">
+                    <img src="./images/img-2.jpg" alt="">
+
+                    <div class="info">
+                       <h3>Michael Karim</h3>
+                        <span>date : 15 2025</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end here  -->
+
+            
+            <!-- start here  -->
+            <div class="boxs">
+                <i class="fas fa-quote-left"></i>
+                <p>Excellent service! The environment is clean, and the team is helpful. I’m very satisfied with the treatment and would definitely recommend this clinic.</p>
+
+
+                <div class="images">
+                    <img src="./images/img-3.jpg" alt="">
+
+                    <div class="info">
+                    <h3>Ethan Miller</h3>
+                    <span>date : 11 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end here  -->
+        </div>
+    </section> 
+    <!-- review section end  -->
+ 
+
+
+
+    <!-- contact section start  -->
+
+   <section id="contacts" class="contacts">
+    <h1 class="heading">contact us</h1>
+    <h3 class="title">you can talk to us any times</h3>
+
+    <div class="row">
+        <!-- form images  -->
+        <div class="images">
+            <img src="./images/form.png" alt="">
+        </div>
+
+        <div class="form-containerr">    
+            <input type="text" id="contactName" placeholder="full name">
+            <input type="email" id="contactEmail" placeholder="enter your email">
+            <input type="number" id="contactPhone" placeholder="phone">
+            <textarea id="contactMessage" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" id="contactSubmit" value="send">
+            <p id="contactMessageAlert" style="color: green; margin-top: 10px;"></p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- contact section end  -->
+
+
+    <!-- blog section start  -->
+
+    <section id="blogs" class="blogs">
+
+        <h1 class="heading">blog</h1>
+        <h3 class="title">latest health articles and updates</h3>
+
+        <div class="box-containerr">
+
+            <!-- start here  -->
+            <div class="boxx">
+                <!-- images  -->
+                <img src="./images/blog 1.png" alt="">
+
+                <div class="contentt">
+                    <!-- <a href="#"> -->
+                        <h2>diabetes</h2>
+                    <!-- </a> -->
+                    <p>Learn how to manage diabetes effectively with proper diet, lifestyle changes, and medical guidance. Understand symptoms, risk factors, and prevention tips to stay healthy.</p>
+                     <!-- button  -->
+                    <a href="#"> <button class="button">learn more</button></a>
+                </div>
+            </div>
+            <!-- end here  -->
+
+            
+            <!-- start here  -->
+            <div class="boxx">
+                <!-- images  -->
+                <img src="./images/blog 2.png" alt="">
+
+                <div class="contentt">
+                    <h2>dengue</h2>
+
+                 <p>Stay informed about dengue symptoms, prevention methods, and treatment options. Learn how to protect yourself from mosquito bites and reduce the risk of infection.</p>
+
+                     <!-- button  -->
+                    <a href="#"> <button class="button">learn more</button></a>
+                </div>
+            </div>
+            <!-- end here  -->
+
+            
+            <!-- start here  -->
+            <div class="boxx">
+                <!-- images  -->
+                <img src="./images/blog 3.png" alt="">
+
+                <div class="contentt">
+                    <!-- <a href="#"> -->
+                        <h2>prevent epidemic</h2>
+                    <!-- </a> -->
+                   <p>Discover essential steps to prevent the spread of infectious diseases. From hygiene habits to early detection, learn how to keep yourself and others safe.</p>
+                     <!-- button  -->
+                    <a href="#"> <button class="button">learn more</button></a>
+                </div>
+            </div>
+            <!-- end here  -->
+        </div>
+    </section>
+
+
+
+    <!-- blog section end  -->
+
+    <!-- ____________services _______________-->
+    <section class="services" id="services">
+        <h1 class="heading">Our services</h1>
+    </br>
+        <div class="row">
+
+            <div class="box1">
+              <i class="fas fa-biohazard"></i>
+                <h2>Cold & Flu Map </h2>
+               <p>Track flu activity in your area and stay informed about rising cold and flu cases to protect yourself and your family.</p>
+                <a href="cold&flu.html"> <button class="buttonn">learn more</button></a>
+            </div>
+  
+            <div class="box1">
+              <i class="fas fa-route"></i>
+                <h2>Find Medical Help</h2>
+                <p>Quickly locate nearby clinics, hospitals, and emergency services when you need medical assistance.</p>
+                <a href="nearest_hospital.html"> <button class="buttonn">learn more</button></a>
+            </div>
+   
+            <div class="box1">
+               <i class="fas fa-stethoscope"></i>
+               <h2>Doctor Finder</h2>
+               <p>Search for qualified doctors by specialty, location, and availability to get the care you need.</p>
+               <a href="doctor_finder.html"> <button class="buttonn">learn more</button></a>
+            </div>
+        </div>
+
+    </section>
+
+    
+    
+    <!-- __________quality -->
+    <section class="quality">
+        <h1 class="heading">why choose our healthcare clinic</h1>
+        <div class="row">
+            <div class="box2">
+                <i class="fas fa-user-plus"></i>
+                <h2>24/7 available</h2>
+                <p>Get medical support anytime, day or night.</p>
+            </div>
+            <div class="box2">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h2>medical cycle care</h2>
+                <p>Continuous and personalized care for every stage.</p>
+            </div>
+            <div class="box2">
+                <i class="fas fa-award"></i>
+                <h2>quality control</h2>
+                <p>Reliable service with strict quality standards.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- _______________about -->
+
+    <section class="about" id="aabout">
+        <h1 class="heading">about us</h1>
+        <div class="row row1">
+            <div class="left">
+                <img src="img/pic2.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1>inspiring hope, <br>innovating health</h1>
+                <p>We are dedicated to improving lives through compassionate care and advanced medical solutions. 
+                   Our mission is to provide reliable healthcare services that support your wellness journey with trust 
+                   and innovation. From preventive care to specialized treatments, we work tirelessly to ensure every 
+                   patient receives the attention and expertise they deserve. With a team of skilled professionals and a 
+                   commitment to excellence, we strive to make quality healthcare accessible to everyone.</p>
+
+                <a href="#department"><button class="btn btn3">explore more</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ___________departments -->
+
+    <section class="department" id="department">
+        <h1 class="heading">our departments</h1>
+        <div class="row">
+             <div class="box3">
+                <h1>pathology</h1>
+             </div>
+             <div class="box3">
+                <h1>pharmocology</h1>
+             </div>
+             <div class="box3">
+                <h1>radiology</h1>
+             </div>
+             <div class="box3">
+                <h1>anatomy</h1>
+             </div>
+        </div>
+    </section>
+
+
+    <!-- _______________footer_________________-->
+
+    <footer>
+        <div class="footer-sec">
+            <div class="sec">
+                <div class="f_box">
+                    <h2>contact</h2>
+                    <p>email</p>
+                    <p>youtube</p>
+                    <p>facebook</p>
+                    <p>twitter</p>
+                </div>
+                <div class="f_box">
+                    <h2>departments</h2>
+                    <p>radiology</p>
+                    <p>pharmocology</p>
+                    <p>pathology</p>
+                    <p>anatomy</p>
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="f_box">
+                    <h2>address</h2>
+                    <p>GEC Circle, Chattogram,<br> Block B</p>
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-snapchat"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+                <div class="f_box">
+                    <h2>other facilities</h2>
+                    <p>24/7 services</p>
+                    <p>quality control</p>
+                    <p>full cycle medical care</p>
+                </div>
+            </div>
+        </div>
+         <div class="copyright">
+        <p>Copyright &copy; 2025 Smart HealthMate Assistant | Developed by Anika Ahmed & Maisha Rahman. All rights reserved.</p>
+            <p>IIUC - Department of Computer Science and Engineering</p>
+        </div>
+        </footer>
+
+    
+
+    <script src="home.js"></script>
+</body>
+</html>
